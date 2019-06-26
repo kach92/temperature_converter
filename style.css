@@ -6,6 +6,27 @@
   border:3px solid blue;
 }
 
+#input2{
+    margin: 40px 40px 0px 40px;
+}
+
 #output{
   background-color:pink;
+}
+
+#submit{
+    background-color: #4592c4;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 40px;
+
+}
+
+label{
+    margin:0 0 40px 40px;
+    display:block;
+    font-style: italic;
+    font-size: 20px;
 }

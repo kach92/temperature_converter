@@ -3,20 +3,27 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p>temperature converter</p>
-    <input class="starter" id="input" placeholder="input"/>
+    <h1>Temperature converter</h1>
+    <input class="starter" id="input1" placeholder="Input temperature"/>
+    <input class="starter" id="input2" placeholder="Input unit of temperature"/>
+    <label for="input2">Celcius, Fahrenheit or Kelvin</label>
+    <input type="submit" value="submit" id="submit">
     <h2>output:</h2>
     <p class="starter" id="output"></p>
     <script>
-      document.querySelector('#input').addEventListener('change', function(event){
-        var currentInput = event.target.value;
-        inputHappened(currentInput)
-      });
 
-      var display = function( data ){
+    document.querySelector('#submit').addEventListener('click', function(event){
+
+        inputHappened(document.getElementById("input1").value,document.getElementById("input2").value);
+    });
+
+
+    var display = function( data ){
         var output = document.querySelector('#output');
         output.innerText = data;
-      }
+    }
+
+
     </script>
     <script src="script.js"></script>
   </body>
